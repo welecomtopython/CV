@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  padding: 0;
+}
+
+.header {
+  background-color: #f5f5f5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 16px 16px 8px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header-content {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.resource-count {
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.action-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-options {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.filter-options label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.export-btn {
+  background-color: #f4b400;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.export-btn:hover {
+  background-color: #e0a800;
+}
+
+.import-btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.import-btn:hover {
+  background-color: #3367d6;
+}
+
+.resources-container {
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 0 16px 16px 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f9f9f9;
+  font-weight: 500;
+  color: #666;
+  position: sticky;
+  top: 110px;
+  z-index: 10;
+}
+
+.file-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #555;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.image-preview {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.download-btn {
+  background-color: #34a853;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.download-btn:hover {
+  background-color: #2d9249;
+}
+
+#loading,
+#noResources {
+  padding: 24px;
+  text-align: center;
+  color: #666;
+}
+
+.hidden {
+  display: none;
+}
+
+.name-cell {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Progress indicator for ZIP download */
+.progress-container {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  margin-top: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4285f4;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+  text-align: center;
+}

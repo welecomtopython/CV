@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Resource Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" id="stickyHeader">
+        <div class="header-content">
+          <h1>Page Resources</h1>
+          <div id="resourceCount" class="resource-count">Loading...</div>
+
+          <div class="action-bar">
+            <div class="filter-options">
+              <label
+                ><input type="checkbox" id="showImages" checked /> Images</label
+              >
+              <label
+                ><input type="checkbox" id="showFiles" checked /> Files</label
+              >
+            </div>
+            <button id="exportJsonBtn" class="export-btn">
+              Export as JSON
+            </button>
+            <button id="importBtn" class="import-btn">Download as ZIP</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="resources-container">
+        <div id="loading">Scanning page for resources...</div>
+        <div id="noResources" class="hidden">
+          No resources found on this page.
+        </div>
+
+        <table id="resourcesTable" class="hidden">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Format</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="resourcesTableBody">
+            <!-- Resources will be inserted here -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Google AdSense Ad Code -->
+      <div class="adsense-container">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8317566353683141"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Resource Explorer -->
+        <ins
+          class="adsbygoogle"
+          style="display: inline-block; width: 728px; height: 90px"
+          data-ad-client="ca-pub-8317566353683141"
+          data-ad-slot="5061500815"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <div class="" id="">
+        
+      </div>
+    </div>
+
+    <!-- <script src="jszip.min.js"></script> -->
+    <script src="popup.js"></script>
+  </body>
+</html>
